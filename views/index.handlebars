@@ -1,0 +1,45 @@
+<div class="container">
+  <h2 class="text-center font-weight-bold mt-5">你想對誰說幹話</h2>
+  <form method="POST" action="/">
+    <div class="row mt-5">
+      <div class="col-4">
+        <img class="engineer"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="工程師">
+        <div class="form-check mt-2">
+          <input class="form-check-input mt-2" type="checkbox" name="engineer" id="engineer" {{#if options.engineer}}
+            checked {{/if}}>
+          <label class="form-check-label" for="exampleRadios1">工程師</label>
+        </div>
+      </div>
+      <div class="col-4">
+        <img class="designer"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="設計師">
+        <div class="form-check mt-2">
+          <input class="form-check-input mt-2" type="checkbox" name="designer" id="designer" {{#if options.designer}}
+            checked {{/if}}>
+          <label class="form-check-label" for="exampleRadios1">設計師</label>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <img class="entrepreneur"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="創業家">
+        <div class="form-check mt-2">
+          <input class="form-check-input mt-2" type="checkbox" name="entrepreneur" id="entrepreneur"
+            {{#if options.entrepreneur}} checked {{/if}}>
+          <label class="form-check-label" for="exampleRadios1">創業家</label>
+        </div>
+      </div>
+
+      <div class="col-2 mt-5">
+        <button class="btn btn-primary" type="submit">產生幹話</button>
+      </div>
+      {{#if dryTalk}}
+      <div class="col-10 mt-5">
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1"
+          value="{{dryTalk}}">
+      </div>
+      {{/if}}
+    </div>
+  </form>
+</div>

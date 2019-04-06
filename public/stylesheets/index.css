@@ -1,0 +1,33 @@
+.designer {
+  width: 100%;
+}
+
+.engineer {
+  width: 99%;
+  height: 84%;
+}
+
+.entrepreneur {
+  width: 110%;
+}
+
+.form-check {
+  text-align: center;
+  font-size: 25px;
+}
+
+.form-check-input {
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+}
+
+h2, .form-check-label {
+  color: white;
+}
+
+.form-control {
+  color: red;
+}
