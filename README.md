@@ -1,8 +1,12 @@
 # Dry-talk-generator
 
+***
+
 可以選擇 engineer, designer, entrepreneur 其中一個對其有憤怒的職業產生幹話
 
 # Installing
+
+***
 
 1.點擊右上的 Clone or download
 
@@ -19,6 +23,8 @@
 7.在瀏覽器的網址上輸入 `http://localhost:3000` , 即可開始幹話
 
 # Features
+
+***
 
 + 選擇其一職業點擊產生幹話按鈕 , 即可產生幹話
 
