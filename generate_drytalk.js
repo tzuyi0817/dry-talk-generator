@@ -18,23 +18,21 @@ function generateDryTalk(options) {
   // create a collection to pick up
   let collection = []
 
-  if (options.engineer === 'on') {
+  if (options.job === 'engineer') {
     collection = collection.concat(target[0], sample(task.engineer), sample(phrase))
   }
 
-  if (options.designer === 'on') {
+  if (options.job === 'designer') {
     collection = collection.concat(target[1], sample(task.designer), sample(phrase))
   }
 
-  if (options.entrepreneur === 'on') {
+  if (options.job === 'entrepreneur') {
     collection = collection.concat(target[2], sample(task.entrepreneur), sample(phrase))
   }
 
   //error 
   if (collection.length < 1) {
     return '請選擇一位要講幹話的對象!'
-  } else if (collection.length > 4) {
-    return '一次只能幹話一位喔XDD'
   }
 
   // start generating
